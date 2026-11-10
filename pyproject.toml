@@ -1,0 +1,23 @@
+[project]
+name = "langchain-course2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Adarsh Kesharwani", email = "adarsh2301k@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "black>=26.10.1",
+    "isort>=9.0.2",
+    "langchain>=1.4.9",
+    "langchain-ollama>=1.1.0",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+langchain-course2 = "langchain_course2:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
